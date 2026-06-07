@@ -35,9 +35,10 @@ export default function RootLayout({
         geistMono.variable,
         "font-sans",
         inter.variable,
+        "bg-background",
       )}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-background">{children}</body>
     </html>
   );
 }
