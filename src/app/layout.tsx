@@ -40,13 +40,15 @@ export default function RootLayout({
         "bg-background",
       )}
     >
-      <body className="min-h-full flex flex-col bg-background"><SidebarProvider>
-      <AppSidebar />
-      <main>
-        <SidebarTrigger />
-        {children}
-      </main>
-    </SidebarProvider></body>
+      <body className="min-h-full flex flex-col bg-background">
+        <SidebarProvider>
+          <AppSidebar />
+          <main>
+            <SidebarTrigger />
+            {children}
+          </main>
+        </SidebarProvider>
+      </body>
     </html>
   );
 }
